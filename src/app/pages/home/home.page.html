@@ -5,11 +5,11 @@
   <div class="container">
     
     <ion-title *ngIf="!activado" class="title-container">Presione para activar</ion-title>    
-    <img *ngIf="!activado" src="assets/images/on.png" alt="boton-activar" (click)="onoff()">
+    <img *ngIf="!activado" src="assets/power-on.png" alt="boton-activar" (click)="onoff()">
     
 
     <ion-title *ngIf="activado" class="title-container">Presione para desactivar</ion-title>
-    <img *ngIf="activado" src="assets/images/off.png" alt="boton-activar" (click)="onoff()">
+    <img *ngIf="activado" src="assets/power-off.png" alt="boton-activar" (click)="onoff()">
 
   </div>
   

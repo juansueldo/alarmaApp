@@ -22,11 +22,21 @@
     "@angular/platform-browser": "^16.0.0",
     "@angular/platform-browser-dynamic": "^16.2.6",
     "@angular/router": "^16.2.6",
+    "@awesome-cordova-plugins/core": "^6.4.0",
+    "@awesome-cordova-plugins/device": "^6.4.0",
+    "@awesome-cordova-plugins/device-motion": "^6.4.0",
+    "@awesome-cordova-plugins/flashlight": "^6.4.0",
+    "@awesome-cordova-plugins/vibration": "^6.4.0",
+    "@capacitor/android": "^5.4.1",
     "@capacitor/app": "5.0.6",
     "@capacitor/core": "5.4.1",
-    "@capacitor/haptics": "5.0.6",
+    "@capacitor/haptics": "^5.0.6",
     "@capacitor/keyboard": "5.0.6",
     "@capacitor/status-bar": "5.0.6",
+    "@capgo/capacitor-flash": "^2.0.13",
+    "@ionic-native/core": "^5.36.0",
+    "@ionic-native/flashlight": "^5.36.0",
+    "@ionic-native/vibration": "^5.36.0",
     "@ionic/angular": "^7.4.1",
     "firebase": "9.9.1",
     "ionicons": "^7.1.2",
@@ -51,6 +61,8 @@
     "@types/node": "^12.20.55",
     "@typescript-eslint/eslint-plugin": "5.3.0",
     "@typescript-eslint/parser": "5.3.0",
+    "cordova-plugin-flashlight": "github:EddyVerbruggen/Flashlight-PhoneGap-Plugin",
+    "cordova-plugin-vibration": "^3.1.1",
     "eslint": "^7.32.0",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-jsdoc": "30.7.6",
@@ -66,5 +78,11 @@
     "ts-node": "^8.10.2",
     "typescript": "~5.0.2"
   },
-  "description": "An Ionic project"
+  "description": "An Ionic project",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-flashlight": {},
+      "cordova-plugin-vibration": {}
+    }
+  }
 }

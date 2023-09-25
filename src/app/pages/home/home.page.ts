@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
 import { AuthService} from '../../../app/services/auth.service';
 import Swal from 'sweetalert2';
-import { Flashlight } from '@awesome-cordova-plugins/flashlight/ngx';
-import { Vibration } from '@awesome-cordova-plugins/vibration/ngx';
+//import { Flashlight } from '@awesome-cordova-plugins/flashlight/ngx';
+import { Vibration } from '@ionic-native/vibration/ngx';
 import { DeviceMotion, DeviceMotionAccelerationData } from '@awesome-cordova-plugins/device-motion';
+import { Injectable } from '@angular/core';
+import { Flashlight } from '@ionic-native/flashlight/ngx';
+//import { Flashlight } from '@ionic-native/flashlight/ngx';
 
 @Component({
   selector: 'app-home',
@@ -59,8 +62,8 @@ export class HomePage {
       inputPlaceholder: 'Ingrese su clave',
       confirmButtonText: "Confirmar",
       confirmButtonColor: '#428C81',
-      background: '#000000',
-      color: '#FFFFFF',
+      background: '#76d3bd',
+      color: '#BF4342',
       heightAuto:false
     })
     if (clave === this.auth.claveActual) {

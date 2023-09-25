@@ -1,3 +1,16 @@
+ion-content{
+  --background: #BF4342;
+  text-align: center;
+}
+.title-container{
+  color: #76d3bd;
+  filter: drop-shadow(12px 10px 10px #000000);
+  padding: 10px;
+}
+img{
+  filter: drop-shadow(12px 10px 10px #000000);
+  cursor: pointer;
+}
 #container {
   text-align: center;
 
@@ -6,18 +19,20 @@
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+  background-color: rgb(250, 208, 106);
 }
 
 #container strong {
   font-size: 20px;
   line-height: 26px;
+  
 }
 
 #container p {
   font-size: 16px;
   line-height: 22px;
 
-  color: #8c8c8c;
+  color: #fad06a;
 
   margin: 0;
 }
