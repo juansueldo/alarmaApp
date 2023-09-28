@@ -9,6 +9,7 @@ ion-content{
     4px 3px 16px rgba(0,0,0,0.88);
 }
 .ion-margin{
+    margin-right: 60px;
     filter: drop-shadow(12px 10px 10px #000000);
 }
 .ion-justify-content-center{
@@ -29,4 +30,10 @@ ion-input{
 }
 .error{
     color: rgb(118, 211, 189);
+}
+.fast-login{
+    margin-top: 20px;
+}
+.ion-margin-top{
+    margin-top: 65px;
 }

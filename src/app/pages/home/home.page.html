@@ -1,22 +1,26 @@
 
 <ion-content [fullscreen]="true">
-  
+  <ion-header>
+    <ion-toolbar class="ion-text-center toolbar-color">
+      <ion-title *ngIf="!activado" class="title-container">Presione para activar</ion-title>    
+      <ion-title *ngIf="activado" class="title-container">Presione para desactivar</ion-title>
+    </ion-toolbar>
+  </ion-header>
 
+  
   <div class="container">
     
-    <ion-title *ngIf="!activado" class="title-container">Presione para activar</ion-title>    
     <img *ngIf="!activado" src="assets/power-on.png" alt="boton-activar" (click)="onoff()">
     
 
-    <ion-title *ngIf="activado" class="title-container">Presione para desactivar</ion-title>
     <img *ngIf="activado" src="assets/power-off.png" alt="boton-activar" (click)="onoff()">
 
   </div>
   
-  <ion-fab  horizontal="center" vertical="bottom" class="boton-logout">
-    <ion-fab-button color="dark" title="Cerrar sesión" (click)="cerrarSesion()">
-      <ion-icon name="log-out-outline" color="warning"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
+  <div class="bottom-button">
+    <ion-button expand="full" color="primary" title="Cerrar sesión" (click)="cerrarSesion()">
+      Cerrar Sesión
+    </ion-button>
+  </div>
 
 </ion-content>

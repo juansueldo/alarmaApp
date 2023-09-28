@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar class="ion-text-center toolbar-color">
-    <ion-title>Bienvenido Alarma de robo</ion-title>
+    <ion-title>Alarma App</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -10,7 +10,7 @@
   </ion-row>
   
   <ion-row class="ion-justify-content-center ion-padding">
-    <ion-title class="title">Por favor ingrese sus datos</ion-title>
+    <ion-title class="title">Ingrese su correo eléctronico <br>y contraseña para continuar</ion-title>
   </ion-row>
 
   <form [formGroup]="formRegistro">
@@ -20,7 +20,7 @@
         <ion-col size="7" class="ion-text-center ion-align-items-center">
           
           <ion-item class="input">
-            <ion-input label="Correo" label-placement="floating" placeholder="Correo" type="email" formControlName="email"></ion-input>
+            <ion-input label="Correo eléctronico" label-placement="floating" placeholder="Correo" type="email" formControlName="email"></ion-input>
           </ion-item>
 
           <ion-text *ngIf="formRegistro.controls['email'].errors?.['required'] && formRegistro.controls['email'].touched" class="error">Debe ingresar un correo</ion-text>
@@ -35,15 +35,15 @@
 
         </ion-col>
         <ion-col size="5" class="ion-text-center">
-          <ion-button  expand="full" color="medium" class="ion-button--round"(click)="logueoRapido('admin@admin.com','123456')">Administrador</ion-button>
-          <ion-button  expand="full" color="dark" class="ion-button--round"(click)="logueoRapido('usuario@usuario.com','123456')">Usuario</ion-button>
-          <ion-button  expand="full" color="medium" class="ion-button--round"(click)="logueoRapido('juan@gmail.com','solano823')">Alumno</ion-button>
+          <ion-button  expand="full" color="medium" class="ion-button--round fast-login"(click)="logueoRapido('admin@admin.com','123456')">Administrador</ion-button>
+          <ion-button  expand="full" color="dark" class="ion-button--round fast-login"(click)="logueoRapido('usuario@usuario.com','123456')">Usuario</ion-button>
+          <ion-button  expand="full" color="medium" class="ion-button--round fast-login"(click)="logueoRapido('juan@gmail.com','solano823')">Alumno</ion-button>
         </ion-col>
       </ion-row>
       
       <ion-row>
         <ion-col class="ion-text-center ion-margin-top">
-          <ion-button shape="round" [disabled]="formRegistro.invalid" expand="block" (click)="login()" class="ingresar">Ingresar</ion-button>
+          <ion-button [disabled]="formRegistro.invalid" expand="block" (click)="login()" class="ingresar">Ingresar</ion-button>
         </ion-col>
       </ion-row>
 

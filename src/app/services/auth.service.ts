@@ -19,6 +19,8 @@ export class AuthService {
       showConfirmButton: false,
       timer: 2000,
       timerProgressBar: true,
+      color: '#BF4342',
+      background: '#76d3bd',
     })
   }
 
@@ -38,7 +40,7 @@ export class AuthService {
         e=>{
           this.claveActual = password;
           this.emailActual = email;          
-          this.loginExitoso('Bienvenido nuevamente!');
+          this.loginExitoso('Bienvenido '+this.emailActual);
           this.router.navigate(['/home']);
         }
       )

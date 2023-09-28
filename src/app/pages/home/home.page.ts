@@ -59,9 +59,8 @@ export class HomePage {
     const { value: clave } = await Swal.fire({
       title: 'Ingrese su clave',
       input: 'password',      
-      inputPlaceholder: 'Ingrese su clave',
       confirmButtonText: "Confirmar",
-      confirmButtonColor: '#428C81',
+      confirmButtonColor: '#BF4342',
       background: '#76d3bd',
       color: '#BF4342',
       heightAuto:false

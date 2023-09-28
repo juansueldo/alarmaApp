@@ -2,8 +2,14 @@ ion-content{
   --background: #BF4342;
   text-align: center;
 }
+.toolbar-color{
+  --background: #76d3bd;
+  --color: rgb(250, 208, 106); 
+  text-shadow: 4px 3px 6px rgba(0,0,0,0.88),
+  4px 3px 3px rgba(0,0,0,0.88),
+  4px 3px 16px rgba(0,0,0,0.88);
+}
 .title-container{
-  color: #76d3bd;
   filter: drop-shadow(12px 10px 10px #000000);
   padding: 10px;
 }
@@ -11,7 +17,7 @@ img{
   filter: drop-shadow(12px 10px 10px #000000);
   cursor: pointer;
 }
-#container {
+.container {
   text-align: center;
 
   position: absolute;
@@ -19,7 +25,6 @@ img{
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgb(250, 208, 106);
 }
 
 #container strong {
@@ -39,4 +44,9 @@ img{
 
 #container a {
   text-decoration: none;
+}
+.bottom-button{
+  width: 100%;
+  position: absolute;
+  bottom: 9px;
 }
