@@ -17,7 +17,7 @@
     <ion-grid>
       <ion-row class="ion-justify-content-center">
                 
-        <ion-col size="7" class="ion-text-center ion-align-items-center">
+        <ion-col class="ion-text-center ion-align-items-center">
           
           <ion-item class="input">
             <ion-input label="Correo eléctronico" label-placement="floating" placeholder="Correo" type="email" formControlName="email"></ion-input>
@@ -34,11 +34,6 @@
           <ion-text *ngIf="formRegistro.controls['pass'].errors?.['minlength']"  class="error">Debe tener 6 caracteres mínimo</ion-text>
 
         </ion-col>
-        <ion-col size="5" class="ion-text-center">
-          <ion-button  expand="full" color="medium" class="ion-button--round fast-login"(click)="logueoRapido('admin@admin.com','123456')">Administrador</ion-button>
-          <ion-button  expand="full" color="dark" class="ion-button--round fast-login"(click)="logueoRapido('usuario@usuario.com','123456')">Usuario</ion-button>
-          <ion-button  expand="full" color="medium" class="ion-button--round fast-login"(click)="logueoRapido('juan@gmail.com','solano823')">Alumno</ion-button>
-        </ion-col>
       </ion-row>
       
       <ion-row>
@@ -46,7 +41,25 @@
           <ion-button [disabled]="formRegistro.invalid" expand="full" size="large" (click)="login()" class="ingresar">Ingresar</ion-button>
         </ion-col>
       </ion-row>
-
+      <ion-title class="fast-login">Acceso Rápido</ion-title>
+      <ion-segment [scrollable]="true" value="heart">
+        <ion-segment-button value="home" (click)="logueoRapido('admin@admin.com','123456')">
+          <ion-icon color="warning" name="person-circle"></ion-icon>
+          <p class="subtitle">Admin</p>
+        </ion-segment-button>
+        <ion-segment-button value="usuario" (click)="logueoRapido('usuario@usuario.com','123456')">
+          <ion-icon color="warning" name="people"></ion-icon>
+          <p class="subtitle">Usuario</p>
+        </ion-segment-button>
+        <ion-segment-button value="pin" (click)="logueoRapido('juan@gmail.com','solano823')">
+          <ion-icon color="warning" name="person"></ion-icon>
+          <p class="subtitle">Alumno</p>
+        </ion-segment-button>
+        <ion-segment-button value="star" (click)="logueoRapido('invitado@invitado.com','123456')" >
+          <ion-icon color="warning" name="accessibility"></ion-icon>
+          <p class="subtitle">Invitado</p>
+        </ion-segment-button>
+      </ion-segment>
     </ion-grid>
   </form>
 </ion-content>
