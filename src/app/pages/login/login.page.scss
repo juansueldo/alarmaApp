@@ -3,10 +3,13 @@ ion-content{
 }
 .toolbar-color{
     --background: #76d3bd;
-    --color: rgb(250, 208, 106); 
-    text-shadow: 4px 3px 6px rgba(0,0,0,0.88),
-    4px 3px 3px rgba(0,0,0,0.88),
-    4px 3px 16px rgba(0,0,0,0.88);
+    --color: rgb(250, 208, 106);
+   
+}
+.app-title{
+    font-weight: bold;
+    font-size: 2rem;
+    text-shadow: 0px 1px 4px rgba(0,0,0,0.56);
 }
 .ion-margin{
     margin-right: 60px;
@@ -17,6 +20,10 @@ ion-content{
 }
 .ingresar,.input{
     --background: rgb(118, 211, 189);
+}
+.ingresar{
+    font-family: 'Courier New', Courier, monospace;
+    height: 120px;
 }
 .title{
     --color: rgb(250, 208, 106);
@@ -37,3 +44,8 @@ ion-input{
 .ion-margin-top{
     margin-top: 65px;
 }
+.bottom-button{
+    width: 100%;
+    position: absolute;
+    bottom: 19px;
+  }

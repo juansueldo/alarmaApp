@@ -33,10 +33,10 @@ export class HomePage {
   subscription: any;
 
   //Sonidos
-  audioIzquierda = "../../assets/audios/ey.wav";
-  audioDerecha = "../../assets/audios/estanRobando.wav";
-  audioVertical = "../../assets/audios/baja-el-telefono.wav";
-  audioHorizontal = "../../assets/audios/soltalo.wav";
+  audioIzquierda = "../../assets/audios/epa.mp3";
+  audioDerecha = "../../assets/audios/hurto.mp3";
+  audioVertical = "../../assets/audios/baja.mp3";
+  audioHorizontal = "../../assets/audios/solta.mp3";
   audioError = "../../assets/audios/sirena.mp3";
   audio = new Audio();
 

@@ -10,8 +10,9 @@ ion-content{
   4px 3px 16px rgba(0,0,0,0.88);
 }
 .title-container{
-  filter: drop-shadow(12px 10px 10px #000000);
-  padding: 10px;
+  font-weight: bold;
+  font-size: 2rem;
+  text-shadow: 0px 1px 4px rgba(0,0,0,0.56);
 }
 img{
   filter: drop-shadow(12px 10px 10px #000000);
@@ -49,4 +50,8 @@ img{
   width: 100%;
   position: absolute;
   bottom: 9px;
+}
+.logout{
+  font-family: 'Courier New', Courier, monospace;
+  height: 120px;
 }
